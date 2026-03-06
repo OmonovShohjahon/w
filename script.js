@@ -77,7 +77,7 @@ function drawTextWithLineBreaks(lines, x, y, fontSize, lineHeight) {
 }
 
 function drawText() {
-    var fontSize = Math.min(30, window.innerWidth / 40); // Adjust font size based on screen width
+    var fontSize = Math.min(35, window.innerWidth / 25); // Adjust font size based on screen width
     var lineHeight = 8;
 
     context.font = fontSize + "px Comic Sans MS";
@@ -89,13 +89,13 @@ function drawText() {
     context.shadowOffsetY = 0;
 
     if(frameNumber < 250){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(255, 45, 45, ${opacity})`;
         context.fillText("Муштарийм мани", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     //fades out the text by decreasing the opacity
     if(frameNumber >= 250 && frameNumber < 500){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(255, 45, 45, ${opacity})`;
         context.fillText("Муштарийм мани", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
@@ -105,7 +105,7 @@ function drawText() {
         opacity = 0;
     }
     if(frameNumber > 500 && frameNumber < 750){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(255, 45, 45, ${opacity})`;
 
         if (window.innerWidth < 600) {           //shortens long sentence for mobile screens
             drawTextWithLineBreaks(["Сани канчали севишими блмисан"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
@@ -116,7 +116,7 @@ function drawText() {
         opacity = opacity + 0.01;
     }
     if(frameNumber >= 750 && frameNumber < 1000){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(255, 45, 45, ${opacity})`;
         
         if (window.innerWidth < 600) {
             drawTextWithLineBreaks(["Хар бр коршган пайталримизи есмдан чкаромиман"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
@@ -131,13 +131,13 @@ function drawText() {
         opacity = 0;
     }
     if(frameNumber > 1000 && frameNumber < 1250){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("ифорини, овозини, козларини, сочларини ва ичиндеги алохида хаети бор Муштарийни", canvas.width/2, canvas.height/2);
+        context.fillStyle = `rgba(255, 45, 45, ${opacity})`;
+        context.fillText("ифорини, овозини, козларини, сочларини ичиндеги алохида хаетини", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     if(frameNumber >= 1250 && frameNumber < 1500){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("ифорини, овозини, козларини, сочларини ва ичиндеги алохида хаети бор Муштарийни", canvas.width/2, canvas.height/2);
+        context.fillStyle = `rgba(255, 45, 45, ${opacity})`;
+        context.fillText("ифорини, овозини, козларини, сочларини ичиндеги алохида хаетини", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
 
@@ -145,12 +145,12 @@ function drawText() {
         opacity = 0;
     }
     if(frameNumber > 1500 && frameNumber < 1750){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(255, 45, 45, ${opacity})`;
         context.fillText("санде одамми тополганим учун хурсанман", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     if(frameNumber >= 1750 && frameNumber < 2000){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(255, 45, 45, ${opacity})`;
         context.fillText("санде одамми тополганим учун хурсанман", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
@@ -159,7 +159,7 @@ function drawText() {
         opacity = 0;
     }
     if(frameNumber > 2000 && frameNumber < 2250){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(255, 45, 45, ${opacity})`;
 
         if (window.innerWidth < 600) {
             drawTextWithLineBreaks(["охргача брга бололишимзага ишонама"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
@@ -170,7 +170,7 @@ function drawText() {
         opacity = opacity + 0.01;
     }
     if(frameNumber >= 2250 && frameNumber < 2500){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(255, 45, 45, ${opacity})`;
 
         if (window.innerWidth < 600) {
             drawTextWithLineBreaks(["Взаимоотношение главное"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
@@ -185,7 +185,7 @@ function drawText() {
         opacity = 0;
     }
     if(frameNumber > 2500 && frameNumber < 99999){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(255, 45, 45, ${opacity})`;
 
         if (window.innerWidth < 600) {
             drawTextWithLineBreaks(["Бутун дуньени корсатама озми колим блан"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
