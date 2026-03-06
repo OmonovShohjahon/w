@@ -77,15 +77,14 @@ function drawTextWithLineBreaks(lines, x, y, fontSize, lineHeight) {
 }
 
 function drawText() {
-    var fontSize = Math.min(30, window.innerWidth / 24); // Adjust font size based on screen width
+    var fontSize = Math.min(30, window.innerWidth / 40); // Adjust font size based on screen width
     var lineHeight = 8;
 
     context.font = fontSize + "px Comic Sans MS";
     context.textAlign = "center";
     
     // glow effect
-    context.shadowColor = "rgba(45, 45, 255, 1)";
-    context.shadowBlur = 8;
+    context.shadowColor = "rgb(255, 45, 45)";
     context.shadowOffsetX = 0;
     context.shadowOffsetY = 0;
 
